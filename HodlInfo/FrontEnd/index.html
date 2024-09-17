@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HODLINFO</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><img src="./assets/logo.png" /></div>
+        <div class="nav-center">
+          <div class="nav-center-el">INR</div>
+          <div class="nav-center-el">BTC</div>
+          <a class="nav-center-el" href="https://wazirx.com/signup">BUY BIC</a>
+        </div>
+        <div class="nav-last">
+          <div class="counter-container">
+            <svg class="progress-ring" width="35" height="35">
+              <circle
+                class="progress-ring__circle"
+                stroke="cyan"
+                stroke-width="2"
+                fill="transparent"
+                r="15"
+                cx="17"
+                cy="17"
+              />
+            </svg>
+            <div id="counter">60</div>
+          </div>
+          <a class="telegram-btn" href="https://hodlinfo.com/connect/telegram">
+            <img class="telegram-icon" src="./assets/telegram_icon.png" />
+            Connect Telegram
+          </a>
+          <label class="toggle">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </nav>
+    </header>
+    <section class="percentage-section">
+      <div>
+        <h2>0.1%</h2>
+        <p>5 Mins</p>
+      </div>
+      <div>
+        <h2>0.96%</h2>
+        <p>1 Hour</p>
+      </div>
+      <div class="special">
+        <h3>Best Price to Trade</h3>
+        <h2 class="">₹26,56,110</h2>
+        <p>Average BTC/INR net price including commission</p>
+      </div>
+      <div>
+        <h2>2.73%</h2>
+        <p>1 Day</p>
+      </div>
+      <div>
+        <h2>7.51%</h2>
+        <p>7 Days</p>
+      </div>
+    </section>
+    <section class="tabular-section">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Platform</th>
+            <th>Last Traded Price</th>
+            <th>Buy / Sell Price</th>
+            <th>Volume</th>
+            <th>Base Unit</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </section>
+    <footer>
+      <div class="footer-box">
+        <span>Copyright &copy; 2019</span>
+        <span>HodlInfo.com</span>
+      </div>
+      <a href="mailto:support@hodlinfo.com">Support</a>
+    </footer>
+    <div class="sticky-box"><p>Add hodlinfo to home screen</p></div>
+    <script src="script.js"></script>
+  </body>
+</html>
